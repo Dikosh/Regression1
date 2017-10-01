@@ -1,0 +1,17 @@
+NA_position <- function(x,y){
+  all(is.na(x)==is.na(y))
+}
+
+v1  <- c(1, 2, 3)
+ v2  <- c(3, 4, 6)
+ NA_position(v1, v2)
+[1] TRUE
+
+v1  <- c(1, 2, NA)
+v2  <- c(3, 4, NA)
+NA_position(v1, v2)
+[1] TRUE
+
+v1  <- c(NA, 2, NA)
+v2  <- c(3, 4, NA)
+NA_position(v1, v2)
